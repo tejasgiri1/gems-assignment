@@ -14,5 +14,9 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "source-map-support": "^0.5.21"
   }
 }
