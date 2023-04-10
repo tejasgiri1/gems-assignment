@@ -35,8 +35,10 @@ export const config: Options.Testrunner = {
     specs: [
         // ToDo: define location for spec files here
         // './src/features/*.feature',
-        // './src/features/login.feature',
-        './src/features/leave.feature'
+        './src/features/login.feature',
+        './src/features/leave.feature',
+        // './src/features/assignLeave.feature',
+        
     ],
     // Patterns to exclude.
     exclude: [
