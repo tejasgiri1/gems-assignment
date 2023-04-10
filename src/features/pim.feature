@@ -9,10 +9,12 @@ Background:
     And I click to see details of second employee
 
 
-  Scenario: search and see the list of employees with that name.
-    When I search employee by name
+  Scenario: search and see the list of employees with name and employment status.
+    When I search employee by name 
+    And I set employment status
     And I click on search button
-    
+
+  
 
   Scenario: Adding employee details.
     When I click on add employee button

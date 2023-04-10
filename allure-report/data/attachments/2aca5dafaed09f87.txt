@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "div.oxd-table-body div.oxd-table-card:nth-child(2)"
+}

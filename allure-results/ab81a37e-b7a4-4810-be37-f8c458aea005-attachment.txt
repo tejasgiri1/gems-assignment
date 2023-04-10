@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": ".oxd-select-dropdown .oxd-select-option:nth-child(2)"
+}

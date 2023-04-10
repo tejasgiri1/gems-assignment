@@ -2,7 +2,6 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import pimPage from "../pageobjects/pim.page";
 import empList from "../pageobjects/empList";
 import empDetails from "../pageobjects/empDetails";
-
 import Helper from "../helpers/Helper";
 
 Given(/^I click on PIM tab$/, async () => {
@@ -27,16 +26,23 @@ When(/^I sort in acending order of Id$/, async () => {
 When(/^I click to see details of second employee$/, async () => {
   const buttonElement = await empList.detailsBtn;
   await Helper.clickButton(buttonElement);
-
   // await new Promise((resolve) => setTimeout(resolve, 5000));
 });
 
 When(/^I search employee by name$/, async () => {
   (await empList.empName).waitForDisplayed();
   await empList.setEmpName("Alice");
-  const buttonElement = await empList.submitBtn;
+});
+
+When(/^I set employment status$/, async () => {
+  const buttonElement = await empList.empStatus;
   await Helper.clickButton(buttonElement);
-  await browser.pause(1000);
+  await browser.pause(500);
+  const dropOption = await $(
+    ".oxd-select-dropdown .oxd-select-option:nth-child(3)"
+  );
+  await Helper.clickButton(dropOption);
+  await browser.pause(500);
 });
 
 When(/^I click on search button$/, async () => {

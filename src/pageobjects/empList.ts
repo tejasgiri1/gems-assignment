@@ -2,6 +2,10 @@ class EmpListPage {
   get empName() {
     return $("form div.oxd-grid-item:nth-child(1) input");
   }
+
+  get empStatus() {
+    return $("form div.oxd-grid-item:nth-child(3) .oxd-select-wrapper");
+  }
   get sortBtn() {
     return $('div.oxd-table-header div.oxd-table-header-cell:nth-child(2) i');
   }
