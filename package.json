@@ -1,6 +1,5 @@
 {
   "name": "my-new-project",
-  "type": "module",
   "devDependencies": {
     "@wdio/allure-reporter": "^8.6.8",
     "@wdio/cli": "^8.6.9",
@@ -14,5 +13,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
   }
 }

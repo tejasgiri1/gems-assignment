@@ -1,0 +1,14 @@
+{
+    "login": {
+        "username": "Admin",
+        "password": "admin123"
+    },
+    "myInfo": {
+        "firstName": "Test",
+        "lastName": "User",
+        "employeeID": "1",
+        "dlNumber": "ABC123",
+        "dlExpiry": "2025-11-02",
+        "nationality": "Afghan"
+    }
+}
