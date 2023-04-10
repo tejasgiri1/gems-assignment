@@ -1,7 +1,7 @@
 import helper from "../helpers/helper";
 import Page from "./page";
 
-export class Leavepage extends Page {
+export class Assignleavepage extends Page {
   public get leaveElement() {
     return $("//span[text()='Leave']");
   }
@@ -29,12 +29,31 @@ export class Leavepage extends Page {
     );
   }
 
-  public get selectDate(){
-    return $()
+  public get nextMonthBtn() {
+    return $(
+      '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div[1]/button[2]'
+    );
   }
 
+  public get selectDate() {
+    return $(
+      "//*[@id='app']/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div[3]/div[1]/div"
+    );
+  }
+
+  public get assignBtn() {
+    return $("//button[@type='submit']");
+  }
+
+  public get okBtn() {
+    return $('//button[text()=" Ok "]');
+  }
   public get employeeNameField() {
     return $("//*[*/text()='Employee Name']/../div[2]/div/div/input");
+  }
+
+  public get employeeName() {
+    return $("//*[@role='listbox']/div[1]");
   }
 
   public get leaveTypeField() {
@@ -47,6 +66,10 @@ export class Leavepage extends Page {
 
   public get leaveType() {
     return $("//div[@role='listbox']/div[2]");
+  }
+
+  public get verifyToast() {
+    return $('//*[@id="oxd-toaster_1"]/div/div[1]/div[2]/p[1]');
   }
 
   public async clickOnLeaveElement() {
@@ -69,7 +92,10 @@ export class Leavepage extends Page {
 
   public async setEmployeeName() {
     await (await this.employeeNameField).waitForDisplayed();
-    await (await this.employeeNameField).setValue("Odis  Adalwin");
+    await (await this.employeeNameField).setValue("e");
+    await browser.pause(3000);
+    await (await this.employeeName).waitForDisplayed();
+    await (await this.employeeName).click();
   }
 
   public async setLeaveType() {
@@ -84,10 +110,24 @@ export class Leavepage extends Page {
 
   public async setToDateValue() {
     await (await this.toDateField).click();
-    await (await this.toDateField).clearValue();
-    await (await this.toDateField).setValue("2023-04-01");
-    await browser.pause(10000);
+    await (await this.nextMonthBtn).click();
+    await (await this.nextMonthBtn).click();
+    await (await this.nextMonthBtn).click();
+    await (await this.selectDate).click();
+  }
+
+  public async assignLeave() {
+    await (await this.assignBtn).click();
+    await (await this.okBtn).waitForClickable();
+    await (await this.okBtn).click();
+  }
+
+  public async verifyToastMessage() {
+    await (await this.verifyToast).waitForDisplayed();
+    let text = await (await this.verifyToast).getText();
+    expect(text).toBe("Success");
+    await browser.pause(5000);
   }
 }
 
-export default new Leavepage();
+export default new Assignleavepage();

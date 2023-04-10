@@ -9,3 +9,5 @@ Scenario: Leave Tab Test
     When I choose leave type
     When I choose from date
     When I choose To date
+    When I click on assing leave
+    Then I verify leave assigned successfully
