@@ -52,4 +52,16 @@ export default class AddEmployeePage {
     public static getStatusRadio() {
         return $('div[class="--status-grouped-field"]');
     }
+
+    public static getFirstNameField() {
+        return $('input[name="firstName"]');
+    }
+
+    public static getLastNameField() {
+        return $('input[name="lastName"]');
+    }
+
+    public static getEnabledOption() {
+        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/label');
+    }
 }

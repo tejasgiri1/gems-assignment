@@ -3,12 +3,14 @@
         "username": "Admin",
         "password": "admin123"
     },
-    "myInfo": {
+    "userDetails": {
         "firstName": "Test",
         "lastName": "User",
         "employeeID": "1",
         "dlNumber": "ABC123",
         "dlExpiry": "2025-11-02",
-        "nationality": "Afghan"
+        "nationality": "Afghan",
+        "username": "test_user",
+        "password": "Pass@123"
     }
 }

@@ -145,3 +145,53 @@ Then(/^Different password error message is displayed$/, async () => {
     expect(await confirmPasswordErrorMessage.getText()).to.be.equal('Passwords do not match');
 });
 
+
+When(/^I enter First name at Add Employee Page$/, async () => {
+    const firstNameField = await AddEmployeePage.getFirstNameField();
+    const firstName = await Jsonhelper.extractKeyValuePair('userDetails', 'firstName');
+    await firstNameField.setValue(firstName);
+
+    expect(await firstNameField.getValue()).to.be.equal(firstName);
+});
+
+When(/^I enter Last name at Add Employee Page$/, async () => {
+    const lastNameField = await AddEmployeePage.getLastNameField();
+    const lastName = await Jsonhelper.extractKeyValuePair('userDetails', 'lastName');
+    await lastNameField.setValue(lastName);
+
+    expect(await lastNameField.getValue()).to.be.equal(lastName);
+});
+
+When(/^I enter username at Add Employee Page$/, async () => {
+    const usernameField = await AddEmployeePage.getUsernameField();
+    const username = await Jsonhelper.extractKeyValuePair('userDetails', 'username');
+    await usernameField.setValue(username);
+
+    expect(await usernameField.getValue()).to.be.equal(username);
+});
+
+When(/^I enter password at Add Employee Page$/, async () => {
+    const passwordField = await AddEmployeePage.getPasswordField();
+    const password = await Jsonhelper.extractKeyValuePair('userDetails', 'password');
+    await passwordField.setValue(password);
+
+    expect(await passwordField.getValue()).to.be.equal(password);
+});
+
+When(/^I enter Confirm password at Add Employee Page$/, async () => {
+    const confirmPasswordField = await AddEmployeePage.getConfirmPasswordField();
+    const confirmPassword = await Jsonhelper.extractKeyValuePair('userDetails', 'password');
+    await confirmPasswordField.setValue(confirmPassword);
+
+    expect(await confirmPasswordField.getValue()).to.be.equal(confirmPassword);
+});
+
+When(/^I set status of employee at Add Employee Page$/, async () => {
+    const enabledOption = await AddEmployeePage.getEnabledOption();
+    await enabledOption.waitForClickable();
+    await enabledOption.click();
+});
+
+Then(/^I employee is saved$/, async () => {
+
+});

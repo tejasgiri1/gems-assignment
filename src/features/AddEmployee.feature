@@ -46,13 +46,13 @@ Feature: Add Employee
         When I fill confirm password field with different password
         Then Different password error message is displayed
 
-# Scenario: Fill all details and Save employee
-#     Given Create Login details toggle is on
-#     When I enter First name at Add Employee Page
-#     When I enter Last name at Add Employee Page
-#     When I enter username at Add Employee Page
-#     When I enter password at Add Employee Page
-#     When I enter Confirm password at Add Employee Page
-#     When I set status of employee at Add Employee Page
-#     When I click on Save
-#     Then I employee is saved
+    Scenario: Fill all details and Save employee
+        Given Create Login details toggle is on
+        When I enter First name at Add Employee Page
+        When I enter Last name at Add Employee Page
+        When I enter username at Add Employee Page
+        When I enter password at Add Employee Page
+        When I enter Confirm password at Add Employee Page
+        When I set status of employee at Add Employee Page
+        When I click on Save
+# Then I employee is saved
