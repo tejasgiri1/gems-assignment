@@ -1,0 +1,35 @@
+{
+  "login": {
+    "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "emp1": {
+    "username": "admin1",
+    "password": "Admin1",
+    "firstName": "Shahil",
+    "middleName": "ku",
+    "lastName": "Sharma",
+    "id": 102345,
+    "imgPath": "C:\\Users\\shivani_singh1\\Desktop\\pp1.jpeg"
+  },
+  "emp2": {
+    "username": "admin2",
+    "password": "Admin2",
+    "firstName": "Haley",
+    "middleName": "m",
+    "lastName": "Humphy",
+    "id": 102346,
+    "imgPath": "C:\\Users\\shivani_singh1\\Desktop\\pp2.png"
+  },
+
+  "emp3": {
+    "username": "admin3",
+    "password": "Admin3",
+    "firstName": "Rahul",
+    "middleName": "raj",
+    "lastName": "Roy",
+    "id": 102347,
+    "imgPath": "C:\\Users\\shivani_singh1\\Desktop\\pp3.png"
+  }
+}
