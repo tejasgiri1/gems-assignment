@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "div.oxd-table-header-cell:nth-child(2) li:nth-child(1)"
-}

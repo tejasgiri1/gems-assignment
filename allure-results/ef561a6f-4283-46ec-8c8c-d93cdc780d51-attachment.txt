@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"ul li:nth-child(2) a\"}\n  (Session info: chrome=111.0.5563.147)",
-  "stacktrace": "Backtrace:\n\t(No symbol) [0x00E7DCE3]\n\t(No symbol) [0x00E139D1]\n\t(No symbol) [0x00D24DA8]\n\t(No symbol) [0x00D5019F]\n\t(No symbol) [0x00D503AB]\n\t(No symbol) [0x00D7EE62]\n\t(No symbol) [0x00D6AF14]\n\t(No symbol) [0x00D7D57C]\n\t(No symbol) [0x00D6ACC6]\n\t(No symbol) [0x00D46F68]\n\t(No symbol) [0x00D480CD]\n\tGetHandleVerifier [0x010F3832+2506274]\n\tGetHandleVerifier [0x01129794+2727300]\n\tGetHandleVerifier [0x0112E36C+2746716]\n\tGetHandleVerifier [0x00F26690+617600]\n\t(No symbol) [0x00E1C712]\n\t(No symbol) [0x00E21FF8]\n\t(No symbol) [0x00E220DB]\n\t(No symbol) [0x00E2C63B]\n\tBaseThreadInitThunk [0x75BB6BD9+25]\n\tRtlGetFullPathName_UEx [0x778E8FD2+1218]\n\tRtlGetFullPathName_UEx [0x778E8F9D+1165]\n"
-}

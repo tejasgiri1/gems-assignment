@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.oxd-table-header div.oxd-table-header-cell:nth-child(2) i\"}\n  (Session info: chrome=111.0.5563.147)",
-  "stacktrace": "Backtrace:\n\t(No symbol) [0x002CDCE3]\n\t(No symbol) [0x002639D1]\n\t(No symbol) [0x00174DA8]\n\t(No symbol) [0x001A019F]\n\t(No symbol) [0x001A03AB]\n\t(No symbol) [0x001CEE62]\n\t(No symbol) [0x001BAF14]\n\t(No symbol) [0x001CD57C]\n\t(No symbol) [0x001BACC6]\n\t(No symbol) [0x00196F68]\n\t(No symbol) [0x001980CD]\n\tGetHandleVerifier [0x00543832+2506274]\n\tGetHandleVerifier [0x00579794+2727300]\n\tGetHandleVerifier [0x0057E36C+2746716]\n\tGetHandleVerifier [0x00376690+617600]\n\t(No symbol) [0x0026C712]\n\t(No symbol) [0x00271FF8]\n\t(No symbol) [0x002720DB]\n\t(No symbol) [0x0027C63B]\n\tBaseThreadInitThunk [0x75BB6BD9+25]\n\tRtlGetFullPathName_UEx [0x778E8FD2+1218]\n\tRtlGetFullPathName_UEx [0x778E8F9D+1165]\n\t(No symbol) [0x00000000]\n"
-}
