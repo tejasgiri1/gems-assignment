@@ -64,6 +64,17 @@ class LeavePage {
         await browser.pause(2000);
     }
     public async search() {
+
+        await (await $('//span[text()="Pending Approval "]/i')).waitForClickable();
+        await (await $('//span[text()="Pending Approval "]/i')).click();
+        await (await $('//div[text()="Select"]')).waitForClickable();
+        await (await $('//div[text()="Select"]')).click();
+        await (await $('//div[@role="listbox"]')).waitForDisplayed();
+
+        await (await $('//span[text()="Taken"]')).waitForDisplayed();
+        await (await $('//span[text()="Taken"]')).waitForClickable();
+        await (await $('//span[text()="Taken"]')).click();
+
         (await this.searchfilterbtn).waitForClickable();
         (await this.searchfilterbtn).click();
     }
@@ -136,11 +147,31 @@ class LeavePage {
 
         const save = (await $('//button[text()[normalize-space() = "Save"]]'))
         await save.waitForClickable();
-        await save.click()
+        await save.click();
+
     }
-    // public async showNewLeaveType()
-    // {
-    //     await
+    public get successText() {
+        return $('//div[@id="oxd-toaster_1"]//p');
+    }
+
+    public get deleteType() {
+        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div[3]/div/div/div[6]/div/div/div/div[2]/div/div/button[1]');
+    }
+    public async delete() {
+        (await this.deleteType).waitForDisplayed();
+        (await this.deleteType).waitForClickable();
+        (await this.deleteType).click();
+        // await this.checkIfSuccess();
+        // (await this.successText).waitForDisplayed();
+        // const r = (await this.successText).isDisplayed();
+        // console.log("Susccess: ", r);
+    }
+    // public async checkIfSuccess() {
+    //     //         await browser.waitUntil(async()=>
+    //     // {        this.successText.isDisplayed()},{timeout:6000});
+    //     (await this.successText).waitForDisplayed();
+    //     const r = (await this.successText).isDisplayed();
+    //     console.log("Susccess: ", r);
     // }
 }
 

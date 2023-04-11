@@ -39,9 +39,9 @@ When(/^I should search with dates$/, async () => {
 })
 // --------------------------
 Then(/^I should see records$/, async () => {
-    console.log('records found: ', await leavePage.getRecords());
     expect(await leavePage.getRecords()).toBeGreaterThan(0);
-    await browser.pause(3000);
+    await browser.pause(6000);
+    console.log('records found: ', await leavePage.getRecords());
 })
 
 When(/^I select leave type from configure tab$/, async () => {
