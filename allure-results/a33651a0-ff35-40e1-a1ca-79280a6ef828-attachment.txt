@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//header//a[text()=\"Apply\"]"
-}

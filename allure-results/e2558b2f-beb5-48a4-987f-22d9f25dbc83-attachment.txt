@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div//h6[text()=\"Apply Leave\"]"
-}

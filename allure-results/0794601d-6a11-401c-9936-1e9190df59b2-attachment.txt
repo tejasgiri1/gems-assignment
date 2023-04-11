@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//ul[@class=\"oxd-main-menu\"]\"}\n  (Session info: chrome=111.0.5563.148)",
-  "stacktrace": "Backtrace:\n\t(No symbol) [0x00BBDCE3]\n\t(No symbol) [0x00B539D1]\n\t(No symbol) [0x00A64DA8]\n\t(No symbol) [0x00A9019F]\n\t(No symbol) [0x00A903AB]\n\t(No symbol) [0x00ABEE62]\n\t(No symbol) [0x00AAAF14]\n\t(No symbol) [0x00ABD57C]\n\t(No symbol) [0x00AAACC6]\n\t(No symbol) [0x00A86F68]\n\t(No symbol) [0x00A880CD]\n\tGetHandleVerifier [0x00E33832+2506274]\n\tGetHandleVerifier [0x00E69794+2727300]\n\tGetHandleVerifier [0x00E6E36C+2746716]\n\tGetHandleVerifier [0x00C66690+617600]\n\t(No symbol) [0x00B5C712]\n\t(No symbol) [0x00B61FF8]\n\t(No symbol) [0x00B620DB]\n\t(No symbol) [0x00B6C63B]\n\tBaseThreadInitThunk [0x75F46BD9+25]\n\tRtlGetFullPathName_UEx [0x76F88FD2+1218]\n\tRtlGetFullPathName_UEx [0x76F88F9D+1165]\n"
-}

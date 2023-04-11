@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@name=\" Login \"]\"}\n  (Session info: chrome=111.0.5563.148)",
-  "stacktrace": "Backtrace:\n\t(No symbol) [0x0096DCE3]\n\t(No symbol) [0x009039D1]\n\t(No symbol) [0x00814DA8]\n\t(No symbol) [0x0084019F]\n\t(No symbol) [0x008403AB]\n\t(No symbol) [0x0086EE62]\n\t(No symbol) [0x0085AF14]\n\t(No symbol) [0x0086D57C]\n\t(No symbol) [0x0085ACC6]\n\t(No symbol) [0x00836F68]\n\t(No symbol) [0x008380CD]\n\tGetHandleVerifier [0x00BE3832+2506274]\n\tGetHandleVerifier [0x00C19794+2727300]\n\tGetHandleVerifier [0x00C1E36C+2746716]\n\tGetHandleVerifier [0x00A16690+617600]\n\t(No symbol) [0x0090C712]\n\t(No symbol) [0x00911FF8]\n\t(No symbol) [0x009120DB]\n\t(No symbol) [0x0091C63B]\n\tBaseThreadInitThunk [0x75F46BD9+25]\n\tRtlGetFullPathName_UEx [0x76F88FD2+1218]\n\tRtlGetFullPathName_UEx [0x76F88F9D+1165]\n"
-}
