@@ -19,6 +19,6 @@ When(/^I login with useremail and password$/, async () => {
 Then(/^I should see a welcome page$/, async () => {
     await browser.waitUntil(async () => {
         return (await LoginPage.userMenu).isDisplayed()
-    },{timeout:4000})
+    },{timeout:2000})
     
 });

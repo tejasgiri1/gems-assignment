@@ -11,7 +11,7 @@ Given(/^I see a dashboard page$/, async () => {
 
 When(/^I click on leave tab$/, async () => {
     await leavePage.clickonLeaveTab()
-    await browser.pause(3000)
+    // await browser.pause(3000)
 });
 
 
@@ -19,7 +19,7 @@ When(/^I should see a leaveList$/, async () => {
     const urlToCheck = 'https://opensource-demo.orangehrmlive.com/web/index.php/leave/viewLeaveList';
     browser.waitUntil(async function () {
         return await browser.getUrl() === urlToCheck
-    }, { timeout: 5000 });
+    }, { timeout: 2000 });
 
 })
 
@@ -32,12 +32,16 @@ Then(/^I should see a apply options$/, async () => {
 })
 
 When(/^I should search with dates$/, async () => {
-    await leavePage.searchWithDates();
+    await leavePage.setfromDate("May", "2022");
+    await leavePage.setToDate("November", "2022");
+    await leavePage.search();
 
 })
+// --------------------------
 Then(/^I should see records$/, async () => {
+    console.log('records found: ', await leavePage.getRecords());
     expect(await leavePage.getRecords()).toBeGreaterThan(0);
-    // await browser.pause(1000);
+    await browser.pause(3000);
 })
 
 When(/^I select leave type from configure tab$/, async () => {
@@ -47,13 +51,13 @@ When(/^I should see all leave types$/, async () => {
     // await browser.pause(2000);
     leavePage.showAllLeaveTYpes()
 })
-When(/^I add new leave type$/, async ()=> {
-    
-    await  leavePage.addNewLeaveType();
+When(/^I add new leave type$/, async () => {
+
+    await leavePage.addNewLeaveType();
 })
-Then (/^I should see new leave type added$/,async () => {
+Then(/^I should see new leave type added$/, async () => {
     // await browser.pause(2000);
     // await await leavePage.showNewLeaveType();
     // await browser.pause(2000);
-     await leavePage.showAllLeaveTYpes()
+    await leavePage.showAllLeaveTYpes();
 })
