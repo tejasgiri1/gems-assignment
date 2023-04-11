@@ -44,20 +44,3 @@ Then(/^I should see records$/, async () => {
     console.log('records found: ', await leavePage.getRecords());
 })
 
-When(/^I select leave type from configure tab$/, async () => {
-    await leavePage.clickOnLeaveTypes()
-})
-When(/^I should see all leave types$/, async () => {
-    // await browser.pause(2000);
-    leavePage.showAllLeaveTYpes()
-})
-When(/^I add new leave type$/, async () => {
-
-    await leavePage.addNewLeaveType();
-})
-Then(/^I should see new leave type added$/, async () => {
-    // await browser.pause(2000);
-    // await await leavePage.showNewLeaveType();
-    // await browser.pause(2000);
-    await leavePage.showAllLeaveTYpes();
-})
