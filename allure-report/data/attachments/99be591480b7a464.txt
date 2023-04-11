@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": ".oxd-icon-button.oxd-main-menu-button"
-}

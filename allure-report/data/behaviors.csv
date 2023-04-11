@@ -1,6 +1,0 @@
-"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Login to OrangeHRM: Successful login with valid credentials","","0","0","63","0","0"
-"","Navigate to PIM tab: Adding employee details.","","0","0","32","0","0"
-"","Navigate to PIM tab: search and see the list of employees with name and employment status.","","0","0","35","0","7"
-"","Navigate to PIM tab: Sort the employee details according to ascending order of Id and check the details","","0","0","20","0","4"
-"","Navigate to PIM tab: search and see the list of employees with that name.","","0","0","8","0","2"

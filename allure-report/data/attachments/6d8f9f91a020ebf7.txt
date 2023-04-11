@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "form div.oxd-grid-item:nth-child(3) .oxd-select-wrapper"
-}
