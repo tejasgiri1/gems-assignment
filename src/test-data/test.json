@@ -6,11 +6,10 @@
     "userDetails": {
         "firstName": "Test",
         "lastName": "User",
-        "employeeID": "1",
         "dlNumber": "ABC123",
         "dlExpiry": "2025-11-02",
         "nationality": "Afghan",
-        "username": "test_user",
+        "username": "test_user3",
         "password": "Pass@123"
     }
 }

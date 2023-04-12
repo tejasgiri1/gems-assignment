@@ -6,7 +6,7 @@ export default class AddEmployeePage {
     }
 
     public static getEmployeeIdField() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input');
+        return $('//label[text()="Employee Id"]/parent::div/following-sibling::div/input');
     }
 
     public static getSaveButton() {
@@ -14,23 +14,23 @@ export default class AddEmployeePage {
     }
 
     public static getFirstNameErrorMessage() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/span');
+        return $('//input[@name="firstName"]/parent::div//following-sibling::span');
     }
 
     public static getLastNameErrorMessage() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[3]/span');
+        return $('//input[@name="lastName"]/parent::div//following-sibling::span');
     }
 
     public static getUsernameErrorMessage() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[1]/div/span');
+        return $('//label[text()="Username"]/parent::div/following-sibling::span');
     }
 
     public static getPasswordErrorMessage() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[1]/div/span');
+        return $('//label[text()="Password"]/parent::div/following-sibling::span');
     }
 
     public static getConfirmPasswordErrorMessage() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[2]/div/span');
+        return $('//label[text()="Confirm Password"]/parent::div/following-sibling::span');
     }
 
     public static getCreateLoginDetailsCheckBox() {
@@ -38,15 +38,15 @@ export default class AddEmployeePage {
     }
 
     public static getUsernameField() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[1]/div/div[2]/input');
+        return $('//label[text()="Username"]/parent::div/following-sibling::div/input');
     }
 
     public static getPasswordField() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[1]/div/div[2]/input');
+        return $('//label[text()="Password"]/parent::div/following-sibling::div/input');
     }
 
     public static getConfirmPasswordField() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[2]/div/div[2]/input');
+        return $('//label[text()="Confirm Password"]/parent::div/following-sibling::div/input');
     }
 
     public static getStatusRadio() {
@@ -62,6 +62,6 @@ export default class AddEmployeePage {
     }
 
     public static getEnabledOption() {
-        return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/label');
+        return $('//label[text()="Enabled"]');
     }
 }

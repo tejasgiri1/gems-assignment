@@ -2,12 +2,12 @@ Feature: Add Employee
     Background: I am on add employee page
         Given I am on add employee page
 
-    Scenario: Login to OrangeHRM
-        Given I am on login page
-        When I enter username at Login Page
-        When I enter password at Login Page
-        When I click login
-        Then I will be logged in
+    # Scenario: Login to OrangeHRM
+    #     Given I am on login page
+    #     When I enter username at Login Page
+    #     When I enter password at Login Page
+    #     When I click login
+    #     Then I will be logged in
 
     Scenario: Employee Id is filled from backend
         When I Check details in Employee Id field its not empty
@@ -55,4 +55,4 @@ Feature: Add Employee
         When I enter Confirm password at Add Employee Page
         When I set status of employee at Add Employee Page
         When I click on Save
-# Then I employee is saved
+        Then Employee is saved

@@ -5,35 +5,11 @@ import Util from "../helpers/Util.ts";
 import AddEmployeePage from "../pageobjects/AddEmployeePage.ts";
 import Homepage from "../pageobjects/HomePage.ts";
 import LoginPage from "../pageobjects/LoginPage.ts";
+import MyInfo from "../pageobjects/MyInfo.ts";
 
 Given(/^I am on add employee page$/, async () => {
     await AddEmployeePage.open();
     await Util.waitForLoaded();
-});
-
-Given(/^I am on login page$/, async () => {
-    // await LoginPage.open();
-    await browser.url('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-});
-
-When(/^I enter username at Login Page$/, async () => {
-    const username: string = await Jsonhelper.extractKeyValuePair('login', 'username');
-    await (await LoginPage.getUsernameField()).setValue(username);
-});
-
-When(/^I enter password at Login Page$/, async () => {
-    const password: string = await Jsonhelper.extractKeyValuePair('login', 'password');
-    await (await LoginPage.getPasswordField()).setValue(password);
-});
-
-When(/^I click login$/, async () => {
-    await (await LoginPage.getLoginButton()).click();
-});
-
-Then(/^I will be logged in$/, async () => {
-    await Util.waitForLoaded();
-    await (await Homepage.getUserDropdown()).isDisplayed();
-    await browser.pause(5000);
 });
 
 When(/^I Check details in Employee Id field its not empty$/, async () => {
@@ -192,6 +168,7 @@ When(/^I set status of employee at Add Employee Page$/, async () => {
     await enabledOption.click();
 });
 
-Then(/^I employee is saved$/, async () => {
-
+Then(/^Employee is saved$/, async () => {
+    Util.waitForLoaded();
+    await (await MyInfo.getUserHeading()).waitForDisplayed();
 });
