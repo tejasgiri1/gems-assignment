@@ -1,0 +1,15 @@
+{
+    "login": {
+        "username": "Admin",
+        "password": "admin123"
+    },
+    "userDetails": {
+        "firstName": "Test",
+        "lastName": "User",
+        "dlNumber": "ABC123",
+        "dlExpiry": "2025-11-02",
+        "nationality": "Afghan",
+        "username": "test_user3",
+        "password": "Pass@123"
+    }
+}
